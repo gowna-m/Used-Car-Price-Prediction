@@ -8,7 +8,7 @@ To enable consumers to know the actual worth of their car or desired
 car, by simply providing the program with a set of attributes from the desired car to predict the car price.
 The purpose of this study is to understand and evaluate used car prices, and to develop a strategy
 that utilizes Machine Learning techniques to predict used car prices.
-AS part of the Exploratory analysis,
+As part of the Exploratory analysis,
 1. Almost every column has missing values. So first we have to do the imputations.
 2. Drop the columns `VIN` and `State` as they are not relevant for price prediction.
 3. Identify `Numerical` and `Categorical` Columns and label encode the categorical features. There are two numerical features, Year and Odometer, rest are categorical.

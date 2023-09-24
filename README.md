@@ -23,19 +23,8 @@ that utilizes Machine Learning techniques to predict used car prices.
     3. `ExtraTreesRegressor`
     
     4. `KNeighborsRegressor`
-    
-7. The score of these estimators is also saved in the dataframe to compare with the previous imputers.
-8. Created a plot to compare the scores more intuitively.
-9. Checking the scores, we move ahead with `IterativeImputer` using `Bayesian Ridge estimator` to impute the missing values of categorical features.
-10. In the next step, we impute the missing values in `Numerical Features` using `ExtraTreesRegressor` as estimator in IterativeImputation.
+
+9. `IterativeImputer` using `Bayesian Ridge estimator` to impute the missing values of categorical features.
+10. Impute the missing values in `Numerical Features` using `ExtraTreesRegressor` as estimator in IterativeImputation.
 11. Convert the Target Variable to its log values, so that we get a `normalized target`.
 12. We find out the outliers for numerical variables and target and drop the outlier data points.
-
-    `Shape before pre-processing: 426,880`
-    
-    `Shape after pre-processing: 364,432`
-    
-    `Total 62,448 data points dropped.`
-    
-    
-13. Saved this processed data in a new csv file.

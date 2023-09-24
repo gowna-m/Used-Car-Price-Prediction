@@ -8,7 +8,7 @@ To enable consumers to know the actual worth of their car or desired
 car, by simply providing the program with a set of attributes from the desired car to predict the car price.
 The purpose of this study is to understand and evaluate used car prices, and to develop a strategy
 that utilizes Machine Learning techniques to predict used car prices.
-
+AS part of the Exploratory analysis,
 1. Almost every column has missing values. So first we have to do the imputations.
 2. Drop the columns `VIN` and `State` as they are not relevant for price prediction.
 3. Identify `Numerical` and `Categorical` Columns and label encode the categorical features. There are two numerical features, Year and Odometer, rest are categorical.
@@ -25,6 +25,35 @@ that utilizes Machine Learning techniques to predict used car prices.
     4. `KNeighborsRegressor`
 
 9. `IterativeImputer` using `Bayesian Ridge estimator` to impute the missing values of categorical features.
-10. Impute the missing values in `Numerical Features` using `ExtraTreesRegressor` as estimator in IterativeImputation.
+10. Imputed the missing values in `Numerical Features` using `ExtraTreesRegressor` as estimator in IterativeImputation.
 11. Convert the Target Variable to its log values, so that we get a `normalized target`.
-12. We find out the outliers for numerical variables and target and drop the outlier data points.
+12. Found the outliers for numerical variables and target and drop the outlier data points.
+
+I experimented with various models to find out the most suitable one for our data.
+1. `Linear Regression`
+
+    **Mean Squared Logarithmic Error (MSLE): 0.002379**
+    
+    **Mean Squared Error (MSE): 0.25030**
+    
+    **R-squared (R2) Score: 0.62935**
+
+<br>
+
+2. `Ridge Regression`
+
+    **Mean Squared Logarithmic Error (MSLE): 0.002379**
+    
+    **Mean Squared Error (MSE): 0.25030**
+    
+    **R-squared (R2) Score: 0.62935** 
+    
+<br>
+
+3. `Random Forest Regressor`
+
+    **Mean Squared Logarithmic Error (MSLE): 0.00060**
+    
+    **Mean Squared Error (MSE): 0.05911**
+    
+    **R-squared (R2) Score: 0.91245**

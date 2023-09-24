@@ -37,7 +37,6 @@ I experimented with various models to find out the most suitable one for our dat
     **Mean Squared Error (MSE): 0.25030**
     
     **R-squared (R2) Score: 0.62935**
-
 <br>
 
 2. `Ridge Regression`
@@ -46,8 +45,7 @@ I experimented with various models to find out the most suitable one for our dat
     
     **Mean Squared Error (MSE): 0.25030**
     
-    **R-squared (R2) Score: 0.62935** 
-    
+    **R-squared (R2) Score: 0.62935**     
 <br>
 
 3. `Random Forest Regressor`
